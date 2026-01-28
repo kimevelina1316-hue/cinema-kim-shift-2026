@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Кинотеатр</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <img src= "images/Logo_Cinema.png">
+      <nav class="nav-left">
+        <img src="images/profile.png" alt="Профиль">
+        <img src="images/tikets.png" alt="Билеты">
+      </nav>
+      <nav class="nav-right">
+        <img src="images/leav.png" alt="Выход">
+        <img src="images/sun.png" alt="Солнце">
+      </nav>
+    </header>
+
+    <main class="afisha">
+      <h1>Афиша</h1>
+      <div class="films-grid">
+        <!-- Фильм 1 -->
+        <div class="film-card" onclick="openFilm()">
+          <div class="poster">
+            <img src="images/venom.webp" alt="Веном 2">
+          </div>
+          <div class="film-info">
+            <h3>Веном 2 (16+)</h3>
+            <p class="genre">Боевик</p>
+            <p class="year">США, 2023</p>
+            <div class="rating">
+              <span>★★★★☆</span>
+              <span>Кинорейтинг: 8.4</span>
+            </div>
+            <button class="btn">Подробнее</button>
+          </div>
+        </div>
+
+        <!-- Фильм 2 -->
+       <div class="film-card" onclick="openFilm()">
+          <div class="poster">
+            <img src="images/soika.webp" alt="Сойка-Переспешница">
+          </div>
+          <div class="film-info">
+            <h3>Голодные игры (12+)</h3>
+            <p class="genre">Антиутопия</p>
+            <p class="year">США, 2023</p>
+            <div class="rating">
+              <span>★★★★☆</span>
+              <span>Кинорейтинг: 8.4</span>
+            </div>
+            <button class="btn">Подробнее</button>
+          </div>
+        </div>
+
+        <!-- Фильм 3 -->
+       <div class="film-card" onclick="openFilm()">
+          <div class="poster">
+            <img src="images/spider.webp" alt="Человек паук">
+          </div>
+          <div class="film-info">
+            <h3>Человек паук</h3>
+            <p class="genre">фантастика, приключения</p>
+            <p class="year">США, 2023</p>
+            <div class="rating">
+              <span>★★★★☆</span>
+              <span>Кинорейтинг: 8.4</span>
+            </div>
+            <button class="btn">Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #222;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #9534D2;
+}
+
+
+nav a {
+  margin-left: 24px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a.active {
+  color: white;
+  font-weight: bold;
+}
+
+/* Афиша */
+.afisha h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.films-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.film-card {
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.film-card:hover {
+  transform: translateY(-5px);
+}
+
+.poster img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.film-info {
+  padding: 16px;
+}
+
+.film-info h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.genre, .year {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #F2EC32;
+}
+
+.btn {
+  background: #9534D2;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Фильм */
+.film-page .back-btn {
+  margin-bottom: 20px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.film-header {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.film-header .poster img {
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.film-details h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.film-details .genre-year {
+  color: #aaa;
+  margin-bottom: 16px;
+}
+
+.description {
+  line-height: 1.6;
+  margin-bottom: 24px;
+  color: #ddd;
+}
+
+.schedule h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.session-group {
+  margin-bottom: 24px;
+}
+
+.session-group h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #aaa;
+}
+
+.sessions {
+  display: flex;
+  gap: 12px;
+}
+
+.sessions span {
+  background: #333;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.sessions span:hover {
+  background: #444;
+}
+
+.btn.big {
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+   border-bottom: 1px solid #555;
+}
+
+.logo {
+  flex-shrink: 0; 
+ 
+}
+
+.nav-left {
+  display: flex;
+  gap: 24px;
+  margin-left: 32px; 
+  align-items: center;
+}
+
+.nav-right {
+  margin-left: auto; 
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+
