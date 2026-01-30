@@ -1,1 +1,1 @@
-#  Cinema Project
+# cinema-kim-shift-2026

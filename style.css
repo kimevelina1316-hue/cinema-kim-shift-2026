@@ -25,6 +25,19 @@ display: flex;
   margin-bottom: 40px;
 }
 
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.icon-item span {
+  font-size: 12px;
+  margin-top: 4px;
+  color: #fff;
+}
 
 .logo {
   font-size: 24px;
@@ -211,5 +224,7 @@ nav a.active {
   gap: 24px;
   align-items: center;
 }
+
+
 
 
