@@ -3,85 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Фильм</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Веном 2 | Шифт Кинотеатр</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-  <div class="container">
-    <header class="header">
-      <img src= "images/Logo_Cinema.png">
-      <nav class="nav-left">
-        <img src="images/profile.png" alt="Профиль">
-        <img src="images/tikets.png" alt="Билеты">
-      </nav>
-      <nav class="nav-right">
-        <img src="images/leav.png" alt="Выход">
-        <img src="images/sun.png" alt="Солнце">
-      </nav>
+    
+    <header class="header-section">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <img src="images/Logo_Cinema.svg">
+        </div>
+        <div class="d-flex gap-2">
+          <a href="profile.html" class="nav-link-custom">
+            <img src="images/Profile.svg" alt="Профиль">
+            Профиль
+          </a>
+          <a href="tickets.html" class="nav-link-custom">
+            <img src="images/Tickets.svg" alt="Билеты">
+            Билеты
+          </a>
+        </div>
+        <div class="d-flex gap-2">
+          <a href="index.html" class="nav-link-custom">
+            <img src="images/Exit.svg" alt="Выход">
+            Выход
+          </a>
+          <a href="#" class="nav-link-custom">
+            <img src="images/Vector.svg" alt="Солнце">
+          </a>
+        </div>
       </div>
     </header>
 
-    <main class="film-page">
-      
-      <div class="back-btn" onclick="history.back()">← Назад</div>
-
-      <div class="film-header">
-        <div class="poster">
-          <img src="images/venom.webp" alt="Веном 2">
-        </div>
-        <div class="film-details">
-          <h1>Веном 2 (16+)</h1>
-          <div class="rating">
-            <span>★★★★☆</span>
-            <span>Кинорейтинг: 8.4</span>
-          </div>
-          <p class="genre-year">Боевик • США, 2023</p>
-          <p class="description">
-            Что ожидает главного героя и его тайного друга, в новой части фильма, где всё тайное станет явным......
-          </p>
-        </div>
-      </div>
-     
     
-      <div class="schedule">
-        <h2>Расписание</h2>
+    <div class="back-btn" onclick="history.back()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M15 19l-7-7 7-7"></path>
+      </svg>
+      Назад
+    </div>
 
-        <div class="session-group">
-          <h3>Красный зал</h3>
-          <div class="sessions">
-            <span>11:40</span>
-            <span>12:40</span>
-            <span>13:40</span>
-            <span>14:40</span>
-            <span>16:40</span>
-          </div>
-        </div>
-
-        <div class="session-group">
-          <h3>Синий зал</h3>
-          <div class="sessions">
-            <span>11:15</span>
-            <span>12:15</span>
-            <span>13:15</span>
-          </div>
-        </div>
-
-        <div class="session-group">
-          <h3>Вип-зал</h3>
-          <div class="sessions">
-            <span>11:40</span>
-            <span>11:42</span>
-            <span>11:45</span>
-            <span>11:47</span>
-          </div>
-        </div>
-
-        <button class="btn big" onclick="showPayment()">Продолжить</button>
+    
+    <div class="film-header">
+      <div class="poster">
+        <img src="images/venom.jpg" alt="Веном 2">
       </div>
-    </main>
+      <div class="film-details">
+        <h1>Веном 2 (16+)</h1>
+        <div class="genre-year">
+          Боевик • США, 2023
+        </div>
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span style="color: #F2EC32;">★★★★☆</span>
+          <span class="text-muted">Кинорейтинг: 8.4</span>
+        </div>
+        <p class="description">
+          Что ожидает главного героя и его тайного друга, в новой части фильма, где всё тайное станет явным...
+        </p>
+      </div>
+    </div>
+
+   
+    <div class="schedule">
+      <h2>Расписание</h2>
+      
+      <div class="session-group">
+        <h3>Красный зал</h3>
+        <div class="sessions">
+          <span class="session-badge">11:40</span>
+          <span class="session-badge">12:40</span>
+          <span class="session-badge">13:40</span>
+          <span class="session-badge">14:40</span>
+          <span class="session-badge">16:40</span>
+        </div>
+      </div>
+
+      <div class="session-group">
+        <h3>Синий зал</h3>
+        <div class="sessions">
+          <span class="session-badge">11:15</span>
+          <span class="session-badge">12:15</span>
+          <span class="session-badge">13:15</span>
+        </div>
+      </div>
+
+      <div class="session-group">
+        <h3>Вип-зал</h3>
+        <div class="sessions">
+          <span class="session-badge">11:40</span>
+          <span class="session-badge">11:42</span>
+          <span class="session-badge">11:45</span>
+          <span class="session-badge">11:47</span>
+        </div>
+      </div>
+
+    
+      <button class="btn btn-purple w-100 mt-4">Продолжить</button>
+    </div>
   </div>
-</div>
-  <script src="script.js"></script>
+
+  <script>
+    function showPayment() {
+      alert('Оформление заказа. Данные отправлены.');
+    }
+  </script>
 </body>
 </html>

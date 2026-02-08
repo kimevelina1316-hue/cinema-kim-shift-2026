@@ -5,76 +5,92 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #222;
   color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
-/* Header */
-.header {
-display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header-section {
   padding: 20px 0;
   margin-bottom: 40px;
+  border-bottom: 1px solid #444;
 }
-
 
 .logo {
   font-size: 24px;
   font-weight: bold;
   color: #9534D2;
+  flex-shrink: 0;
 }
 
 
-nav a {
-  margin-left: 24px;
+.nav-link-custom {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   color: #ccc;
   text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.3s;
 }
 
-nav a:hover {
+.nav-link-custom:hover {
   color: white;
+  background: #333;
 }
 
-nav a.active {
+.nav-link-custom.active {
   color: white;
+  background: #3a2a5a;
   font-weight: bold;
 }
 
-/* Афиша */
+.nav-link-custom img {
+  width: 20px;
+  height: 20px;
+}
+
+
+.btn-purple {
+  background: #9534D2;
+  border-color: #9534D2;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.btn-purple:hover {
+  background: #7a28b3;
+  border-color: #7a28b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(149, 52, 210, 0.4);
+}
+
+
 .afisha h1 {
   font-size: 32px;
   margin-bottom: 30px;
 }
 
-.films-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
-}
-
 .film-card {
   background: #1a1a1a;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
-  transition: transform 0.3s;
 }
 
 .film-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
-.poster img {
+.film-card img {
   width: 100%;
-  height: 500px;
+  height: 450px;
   object-fit: cover;
 }
 
@@ -82,41 +98,41 @@ nav a.active {
   padding: 16px;
 }
 
-.film-info h3 {
+.film-title {
   font-size: 18px;
+  font-weight: bold;
   margin-bottom: 8px;
+  color: #fff;
 }
 
-.genre, .year {
+.film-genre,
+.film-year {
   font-size: 14px;
   color: #aaa;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+.film-year {
+  margin-bottom: 12px;
 }
 
 .rating {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   margin-bottom: 12px;
   font-size: 14px;
   color: #F2EC32;
 }
 
-.btn {
-  background: #9534D2;
-  color: white;
-  border: none;
-  padding: 8px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-}
 
-/* Фильм */
-.film-page .back-btn {
-  margin-bottom: 20px;
+.back-btn {
   color: #aaa;
   cursor: pointer;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .film-header {
@@ -125,11 +141,11 @@ nav a.active {
   margin-bottom: 40px;
 }
 
-.film-header .poster img {
+.poster img {
   width: 300px;
   height: 450px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .film-details h1 {
@@ -137,9 +153,10 @@ nav a.active {
   margin-bottom: 16px;
 }
 
-.film-details .genre-year {
+.genre-year {
   color: #aaa;
   margin-bottom: 16px;
+  font-size: 14px;
 }
 
 .description {
@@ -165,51 +182,20 @@ nav a.active {
 
 .sessions {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
-.sessions span {
+.session-badge {
   background: #333;
-  padding: 6px 12px;
-  border-radius: 4px;
+  padding: 8px 16px;
+  border-radius: 6px;
   font-size: 14px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.sessions span:hover {
+.session-badge:hover {
   background: #444;
 }
-
-.btn.big {
-  width: 100%;
-  padding: 16px;
-  font-size: 18px;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  padding: 16px 0;
-   border-bottom: 1px solid #555;
-}
-
-.logo {
-  flex-shrink: 0; 
- 
-}
-
-.nav-left {
-  display: flex;
-  gap: 24px;
-  margin-left: 32px; 
-  align-items: center;
-}
-
-.nav-right {
-  margin-left: auto; 
-  display: flex;
-  gap: 24px;
-  align-items: center;
-}
-
 
